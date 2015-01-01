@@ -1,0 +1,17 @@
+<material>
+	<shader name = "sceneobject.fx"/>
+	<technique name = "specular"/>
+	<shadermacro count = "1">
+		<macro_0 name = "specon" value = "1"/>
+	</shadermacro>
+	<parameter count = "4">
+		<param_0 name = "diffuseTex" type = "string" value = "diffuse_tex.png" address = "" filter = ""/>
+		<param_1 name = "normalTex" type = "string" value = "normal_tex.png" address = "" filter = ""/>
+		<param_2 name = "specularTex" type = "string" value = "specular_tex.png" address = "" filter = ""/>
+		<param_3 name = "specularGlossy" type = "float" value = "25"/>
+	</parameter>
+	<renderstate count = "2">
+		<state_0 name = "cDepthTestEnable" value = "1"/>
+		<state_1 name = "cDepthWriteEnable" value = "1"/>
+	</renderstate>
+</material>

@@ -1,0 +1,123 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		44735BFE1A0A058400FE92C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44735BF91A0A058300FE92C3 /* main.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44735BB61A0A058300FE92C3;
+			remoteInfo = main;
+		};
+		44735C001A0A058400FE92C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44735BF91A0A058300FE92C3 /* main.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44735BE21A0A058300FE92C3;
+			remoteInfo = mainTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44735BAC1A0A054200FE92C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/main/main.cpp; sourceTree = "<group>"; };
+		44735BF91A0A058300FE92C3 /* main.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = main.xcodeproj; path = ../../src/main/proj.ios/main/main.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		44388DE71A09D5E8003AB4C3 = {
+			isa = PBXGroup;
+			children = (
+				44735BF91A0A058300FE92C3 /* main.xcodeproj */,
+				44735BAC1A0A054200FE92C3 /* main.cpp */,
+			);
+			sourceTree = "<group>";
+		};
+		44735BFA1A0A058300FE92C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44735BFF1A0A058400FE92C3 /* main.app */,
+				44735C011A0A058400FE92C3 /* mainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		44388DE81A09D5E8003AB4C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 44388DEB1A09D5E8003AB4C3 /* Build configuration list for PBXProject "main" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44388DE71A09D5E8003AB4C3;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44735BFA1A0A058300FE92C3 /* Products */;
+					ProjectRef = 44735BF91A0A058300FE92C3 /* main.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		44735BFF1A0A058400FE92C3 /* main.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = main.app;
+			remoteRef = 44735BFE1A0A058400FE92C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44735C011A0A058400FE92C3 /* mainTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = mainTests.xctest;
+			remoteRef = 44735C001A0A058400FE92C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		44388DEC1A09D5E8003AB4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		44388DED1A09D5E8003AB4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44388DEB1A09D5E8003AB4C3 /* Build configuration list for PBXProject "main" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44388DEC1A09D5E8003AB4C3 /* Debug */,
+				44388DED1A09D5E8003AB4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44388DE81A09D5E8003AB4C3 /* Project object */;
+}

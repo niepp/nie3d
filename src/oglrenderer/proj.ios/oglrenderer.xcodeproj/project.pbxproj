@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AC034C7DD66F5A1CF743AF /* ogltexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A0C69F030661D096BB40FBE /* ogltexture.cpp */; };
+		219A08EE4C5C619071C434A4 /* oglinputlayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6BB43792132453112F7C1D31 /* oglinputlayout.cpp */; };
+		29D030AD2F8845CD55EC0800 /* oglmaterialtemplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 302A212945AF1A1826897DBF /* oglmaterialtemplate.cpp */; };
+		38FB01CF714E39BF39D97F3E /* oglshader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 723A7F5555B21FD5652865E9 /* oglshader.cpp */; };
+		448BA3291A00E7A000B3C04C /* ogldefine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3251A00E7A000B3C04C /* ogldefine.cpp */; };
+		448BA32A1A00E7A000B3C04C /* ogldevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3271A00E7A000B3C04C /* ogldevice.cpp */; };
+		448BA32D1A00E7AC00B3C04C /* oglrendertarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA32B1A00E7AC00B3C04C /* oglrendertarget.cpp */; };
+		6A4445A243FF574F1EDF7822 /* oglwindowtarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C5203B25A092FF124F4227B /* oglwindowtarget.cpp */; };
+		718B1C560DC6548C74836FE4 /* oglrenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 115114144A6472181C952849 /* oglrenderer.cpp */; };
+		741A59E81C0C772930BB7406 /* oglgeobuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BD06B7C32A327ED5AB21D6F /* oglgeobuffer.cpp */; };
+		AC669A31179FCFA0003007D1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC669A30179FCFA0003007D1 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44DD55721A0A2E0800EA3942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DD556E1A0A2E0800EA3942 /* core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 448BA30A1A00E56B00B3C04C;
+			remoteInfo = core;
+		};
+		44DD55741A0A2E1F00EA3942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DD556E1A0A2E0800EA3942 /* core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 448BA3091A00E56B00B3C04C;
+			remoteInfo = core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C653CB34BE55BC50E7078FD /* oglinputlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oglinputlayout.h; path = ../oglinputlayout.h; sourceTree = "<group>"; };
+		115114144A6472181C952849 /* oglrenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = oglrenderer.cpp; path = ../oglrenderer.cpp; sourceTree = "<group>"; };
+		190F445945252E311AD4655F /* oglrenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oglrenderer.h; path = ../oglrenderer.h; sourceTree = "<group>"; };
+		20D7210048447E194A8E3B05 /* ogltexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ogltexture.h; path = ../ogltexture.h; sourceTree = "<group>"; };
+		302A212945AF1A1826897DBF /* oglmaterialtemplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = oglmaterialtemplate.cpp; path = ../oglmaterialtemplate.cpp; sourceTree = "<group>"; };
+		448BA31B1A00E77500B3C04C /* ogl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ogl.h; path = ../ogl.h; sourceTree = "<group>"; };
+		448BA31C1A00E78C00B3C04C /* oglwindowtarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oglwindowtarget.h; path = ../oglwindowtarget.h; sourceTree = "<group>"; };
+		448BA3251A00E7A000B3C04C /* ogldefine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ogldefine.cpp; path = ../ogldefine.cpp; sourceTree = "<group>"; };
+		448BA3261A00E7A000B3C04C /* ogldefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ogldefine.h; path = ../ogldefine.h; sourceTree = "<group>"; };
+		448BA3271A00E7A000B3C04C /* ogldevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ogldevice.cpp; path = ../ogldevice.cpp; sourceTree = "<group>"; };
+		448BA3281A00E7A000B3C04C /* ogldevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ogldevice.h; path = ../ogldevice.h; sourceTree = "<group>"; };
+		448BA32B1A00E7AC00B3C04C /* oglrendertarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = oglrendertarget.cpp; path = ../oglrendertarget.cpp; sourceTree = "<group>"; };
+		448BA32C1A00E7AC00B3C04C /* oglrendertarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oglrendertarget.h; path = ../oglrendertarget.h; sourceTree = "<group>"; };
+		44DD556E1A0A2E0800EA3942 /* core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = core.xcodeproj; path = /Users/username/Downloads/nie3d/build/ios/../../src/core/proj.ios/core.xcodeproj; sourceTree = "<absolute>"; };
+		4BD06B7C32A327ED5AB21D6F /* oglgeobuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = oglgeobuffer.cpp; path = ../oglgeobuffer.cpp; sourceTree = "<group>"; };
+		50740F3A58FC087E3FF84B76 /* oglgeobuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oglgeobuffer.h; path = ../oglgeobuffer.h; sourceTree = "<group>"; };
+		623D2DA47593286F107A470B /* liboglrenderer_d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liboglrenderer_d.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB43792132453112F7C1D31 /* oglinputlayout.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = oglinputlayout.cpp; path = ../oglinputlayout.cpp; sourceTree = "<group>"; };
+		723A7F5555B21FD5652865E9 /* oglshader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = oglshader.cpp; path = ../oglshader.cpp; sourceTree = "<group>"; };
+		724660B076A5652E61714B54 /* oglmaterialtemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oglmaterialtemplate.h; path = ../oglmaterialtemplate.h; sourceTree = "<group>"; };
+		7A0C69F030661D096BB40FBE /* ogltexture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ogltexture.cpp; path = ../ogltexture.cpp; sourceTree = "<group>"; };
+		7C5203B25A092FF124F4227B /* oglwindowtarget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = oglwindowtarget.cpp; path = ../oglwindowtarget.cpp; sourceTree = "<group>"; };
+		7E2F01322B8C23864E6B0545 /* oglshader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oglshader.h; path = ../oglshader.h; sourceTree = "<group>"; };
+		AC669A30179FCFA0003007D1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FE002F9403905AD36BA0A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC669A31179FCFA0003007D1 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		317261890EF652442D974AD1 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				44DD556E1A0A2E0800EA3942 /* core.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		44DD556F1A0A2E0800EA3942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44DD55731A0A2E0800EA3942 /* libcore_d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DDB63F170CF2810564D159A /* oglrenderer */ = {
+			isa = PBXGroup;
+			children = (
+				AC669A30179FCFA0003007D1 /* OpenGLES.framework */,
+				448BA31B1A00E77500B3C04C /* ogl.h */,
+				4BD06B7C32A327ED5AB21D6F /* oglgeobuffer.cpp */,
+				50740F3A58FC087E3FF84B76 /* oglgeobuffer.h */,
+				448BA32B1A00E7AC00B3C04C /* oglrendertarget.cpp */,
+				448BA32C1A00E7AC00B3C04C /* oglrendertarget.h */,
+				448BA3251A00E7A000B3C04C /* ogldefine.cpp */,
+				448BA3261A00E7A000B3C04C /* ogldefine.h */,
+				448BA3271A00E7A000B3C04C /* ogldevice.cpp */,
+				448BA3281A00E7A000B3C04C /* ogldevice.h */,
+				7C5203B25A092FF124F4227B /* oglwindowtarget.cpp */,
+				448BA31C1A00E78C00B3C04C /* oglwindowtarget.h */,
+				6BB43792132453112F7C1D31 /* oglinputlayout.cpp */,
+				0C653CB34BE55BC50E7078FD /* oglinputlayout.h */,
+				302A212945AF1A1826897DBF /* oglmaterialtemplate.cpp */,
+				724660B076A5652E61714B54 /* oglmaterialtemplate.h */,
+				115114144A6472181C952849 /* oglrenderer.cpp */,
+				190F445945252E311AD4655F /* oglrenderer.h */,
+				723A7F5555B21FD5652865E9 /* oglshader.cpp */,
+				7E2F01322B8C23864E6B0545 /* oglshader.h */,
+				7A0C69F030661D096BB40FBE /* ogltexture.cpp */,
+				20D7210048447E194A8E3B05 /* ogltexture.h */,
+				317261890EF652442D974AD1 /* Projects */,
+				768F50B46C66391B2D85280F /* Products */,
+			);
+			name = oglrenderer;
+			sourceTree = "<group>";
+		};
+		768F50B46C66391B2D85280F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				623D2DA47593286F107A470B /* liboglrenderer_d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54C223F129BD3E163EAE1F6B /* oglrenderer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 606E6C05554356B070C12515 /* Build configuration list for PBXNativeTarget "oglrenderer" */;
+			buildPhases = (
+				0E1721D4012930CF6A497ED3 /* Resources */,
+				7D550DC66455140A5717628E /* Sources */,
+				5FE002F9403905AD36BA0A1B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44DD55751A0A2E1F00EA3942 /* PBXTargetDependency */,
+			);
+			name = oglrenderer;
+			productName = oglrenderer;
+			productReference = 623D2DA47593286F107A470B /* liboglrenderer_d.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "oglrenderer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6DDB63F170CF2810564D159A /* oglrenderer */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44DD556F1A0A2E0800EA3942 /* Products */;
+					ProjectRef = 44DD556E1A0A2E0800EA3942 /* core.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				54C223F129BD3E163EAE1F6B /* oglrenderer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		44DD55731A0A2E0800EA3942 /* libcore_d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcore_d.a;
+			remoteRef = 44DD55721A0A2E0800EA3942 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E1721D4012930CF6A497ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D550DC66455140A5717628E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741A59E81C0C772930BB7406 /* oglgeobuffer.cpp in Sources */,
+				448BA32D1A00E7AC00B3C04C /* oglrendertarget.cpp in Sources */,
+				219A08EE4C5C619071C434A4 /* oglinputlayout.cpp in Sources */,
+				29D030AD2F8845CD55EC0800 /* oglmaterialtemplate.cpp in Sources */,
+				448BA3291A00E7A000B3C04C /* ogldefine.cpp in Sources */,
+				448BA32A1A00E7A000B3C04C /* ogldevice.cpp in Sources */,
+				718B1C560DC6548C74836FE4 /* oglrenderer.cpp in Sources */,
+				38FB01CF714E39BF39D97F3E /* oglshader.cpp in Sources */,
+				09AC034C7DD66F5A1CF743AF /* ogltexture.cpp in Sources */,
+				6A4445A243FF574F1EDF7822 /* oglwindowtarget.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44DD55751A0A2E1F00EA3942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = core;
+			targetProxy = 44DD55741A0A2E1F00EA3942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19B8088623770F4179926570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CONFIGURATION_BUILD_DIR = ../../../bin/ios;
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					../../,
+					../../../thirdparty,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					../../../thirdparty/lib,
+					../../../bin/ios,
+				);
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lcore_d";
+				PRODUCT_NAME = oglrenderer_d;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+			};
+			name = Debug;
+		};
+		361D33216ACE2A256FD940AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CONFIGURATION_BUILD_DIR = ../../../bin/ios;
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					../../,
+					../../../thirdparty,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					../../../thirdparty/lib,
+					../../../bin/ios,
+				);
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lcore";
+				PRODUCT_NAME = oglrenderer;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+			};
+			name = Release;
+		};
+		3B1B2A31040B164247911785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../engine/oglrenderer/stdafx.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					_DEBUG,
+					_USEDLL,
+					OGLRENDERER_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../sdk,
+					..,
+					../..,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					../../../../sdk/lib,
+					../../../../bin/iOS,
+				);
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lcore_d";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+			};
+			name = Debug;
+		};
+		66C316B01CEA5FF21CBB76C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../engine/oglrenderer/stdafx.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					_NDEBUG,
+					_USEDLL,
+					OGLRENDERER_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../../sdk,
+					..,
+					../..,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					../../../../sdk/lib,
+					../../../../bin/iOS,
+				);
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "oglrenderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1B2A31040B164247911785 /* Debug */,
+				66C316B01CEA5FF21CBB76C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		606E6C05554356B070C12515 /* Build configuration list for PBXNativeTarget "oglrenderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B8088623770F4179926570 /* Debug */,
+				361D33216ACE2A256FD940AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

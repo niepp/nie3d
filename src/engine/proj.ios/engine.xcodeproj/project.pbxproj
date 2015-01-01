@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		448BA33F1A00EA9E00B3C04C /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA33E1A00EA9E00B3C04C /* postprocess.h */; };
+		448BA3531A00EAB200B3C04C /* rendercontext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3401A00EAB200B3C04C /* rendercontext.cpp */; };
+		448BA3541A00EAB200B3C04C /* rendercontext.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3411A00EAB200B3C04C /* rendercontext.h */; };
+		448BA3551A00EAB200B3C04C /* rendernode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3421A00EAB200B3C04C /* rendernode.cpp */; };
+		448BA3561A00EAB200B3C04C /* rendernode.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3431A00EAB200B3C04C /* rendernode.h */; };
+		448BA3571A00EAB200B3C04C /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3441A00EAB200B3C04C /* resource.cpp */; };
+		448BA3581A00EAB200B3C04C /* resource.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3451A00EAB200B3C04C /* resource.h */; };
+		448BA3591A00EAB200B3C04C /* resourcecache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3461A00EAB200B3C04C /* resourcecache.cpp */; };
+		448BA35A1A00EAB200B3C04C /* resourcecache.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3471A00EAB200B3C04C /* resourcecache.h */; };
+		448BA35B1A00EAB200B3C04C /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3481A00EAB200B3C04C /* scene.cpp */; };
+		448BA35C1A00EAB200B3C04C /* scene.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3491A00EAB200B3C04C /* scene.h */; };
+		448BA35D1A00EAB200B3C04C /* scenenode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA34A1A00EAB200B3C04C /* scenenode.cpp */; };
+		448BA35E1A00EAB200B3C04C /* scenenode.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA34B1A00EAB200B3C04C /* scenenode.h */; };
+		448BA35F1A00EAB200B3C04C /* texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA34C1A00EAB200B3C04C /* texture.cpp */; };
+		448BA3601A00EAB200B3C04C /* texture.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA34D1A00EAB200B3C04C /* texture.h */; };
+		448BA3611A00EAB200B3C04C /* utilityrenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA34E1A00EAB200B3C04C /* utilityrenderer.cpp */; };
+		448BA3621A00EAB200B3C04C /* utilityrenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA34F1A00EAB200B3C04C /* utilityrenderer.h */; };
+		448BA3631A00EAB200B3C04C /* cameranode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3501A00EAB200B3C04C /* cameranode.cpp */; };
+		448BA3641A00EAB200B3C04C /* cameranode.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3511A00EAB200B3C04C /* cameranode.h */; };
+		448BA3651A00EAB200B3C04C /* cloth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3521A00EAB200B3C04C /* cloth.cpp */; };
+		448BA3681A00EABF00B3C04C /* postprocessdof.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3661A00EABF00B3C04C /* postprocessdof.cpp */; };
+		448BA3691A00EABF00B3C04C /* postprocessdof.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3671A00EABF00B3C04C /* postprocessdof.h */; };
+		448BA3781A00EACA00B3C04C /* cloth.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA36A1A00EACA00B3C04C /* cloth.h */; };
+		448BA3791A00EACA00B3C04C /* engine.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA36B1A00EACA00B3C04C /* engine.h */; };
+		448BA37A1A00EACA00B3C04C /* gridnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA36C1A00EACA00B3C04C /* gridnode.cpp */; };
+		448BA37B1A00EACA00B3C04C /* gridnode.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA36D1A00EACA00B3C04C /* gridnode.h */; };
+		448BA37C1A00EACA00B3C04C /* lightnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA36E1A00EACA00B3C04C /* lightnode.cpp */; };
+		448BA37D1A00EACA00B3C04C /* lightnode.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA36F1A00EACA00B3C04C /* lightnode.h */; };
+		448BA37E1A00EACA00B3C04C /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3701A00EACA00B3C04C /* material.cpp */; };
+		448BA37F1A00EACA00B3C04C /* material.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3711A00EACA00B3C04C /* material.h */; };
+		448BA3801A00EACA00B3C04C /* mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3721A00EACA00B3C04C /* mesh.h */; };
+		448BA3811A00EACA00B3C04C /* meshnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3731A00EACA00B3C04C /* meshnode.cpp */; };
+		448BA3821A00EACA00B3C04C /* meshnode.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3741A00EACA00B3C04C /* meshnode.h */; };
+		448BA3831A00EACA00B3C04C /* meshresource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3751A00EACA00B3C04C /* meshresource.cpp */; };
+		448BA3841A00EACA00B3C04C /* meshresource.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BA3761A00EACA00B3C04C /* meshresource.h */; };
+		448BA3851A00EACA00B3C04C /* postprocess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448BA3771A00EACA00B3C04C /* postprocess.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44DD557A1A0A2E4D00EA3942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DD55761A0A2E4D00EA3942 /* oglrenderer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 623D2DA47593286F107A470B;
+			remoteInfo = oglrenderer;
+		};
+		44DD557E1A0A2EA200EA3942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44DD55761A0A2E4D00EA3942 /* oglrenderer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 54C223F129BD3E163EAE1F6B;
+			remoteInfo = oglrenderer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		448BA3391A00E9E900B3C04C /* libengine_d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libengine_d.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		448BA33E1A00EA9E00B3C04C /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postprocess.h; path = ../postprocess.h; sourceTree = "<group>"; };
+		448BA3401A00EAB200B3C04C /* rendercontext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rendercontext.cpp; path = ../rendercontext.cpp; sourceTree = "<group>"; };
+		448BA3411A00EAB200B3C04C /* rendercontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rendercontext.h; path = ../rendercontext.h; sourceTree = "<group>"; };
+		448BA3421A00EAB200B3C04C /* rendernode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rendernode.cpp; path = ../rendernode.cpp; sourceTree = "<group>"; };
+		448BA3431A00EAB200B3C04C /* rendernode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rendernode.h; path = ../rendernode.h; sourceTree = "<group>"; };
+		448BA3441A00EAB200B3C04C /* resource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = resource.cpp; path = ../resource.cpp; sourceTree = "<group>"; };
+		448BA3451A00EAB200B3C04C /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resource.h; path = ../resource.h; sourceTree = "<group>"; };
+		448BA3461A00EAB200B3C04C /* resourcecache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = resourcecache.cpp; path = ../resourcecache.cpp; sourceTree = "<group>"; };
+		448BA3471A00EAB200B3C04C /* resourcecache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resourcecache.h; path = ../resourcecache.h; sourceTree = "<group>"; };
+		448BA3481A00EAB200B3C04C /* scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scene.cpp; path = ../scene.cpp; sourceTree = "<group>"; };
+		448BA3491A00EAB200B3C04C /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scene.h; path = ../scene.h; sourceTree = "<group>"; };
+		448BA34A1A00EAB200B3C04C /* scenenode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scenenode.cpp; path = ../scenenode.cpp; sourceTree = "<group>"; };
+		448BA34B1A00EAB200B3C04C /* scenenode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scenenode.h; path = ../scenenode.h; sourceTree = "<group>"; };
+		448BA34C1A00EAB200B3C04C /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = texture.cpp; path = ../texture.cpp; sourceTree = "<group>"; };
+		448BA34D1A00EAB200B3C04C /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = texture.h; path = ../texture.h; sourceTree = "<group>"; };
+		448BA34E1A00EAB200B3C04C /* utilityrenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utilityrenderer.cpp; path = ../utilityrenderer.cpp; sourceTree = "<group>"; };
+		448BA34F1A00EAB200B3C04C /* utilityrenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utilityrenderer.h; path = ../utilityrenderer.h; sourceTree = "<group>"; };
+		448BA3501A00EAB200B3C04C /* cameranode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cameranode.cpp; path = ../cameranode.cpp; sourceTree = "<group>"; };
+		448BA3511A00EAB200B3C04C /* cameranode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cameranode.h; path = ../cameranode.h; sourceTree = "<group>"; };
+		448BA3521A00EAB200B3C04C /* cloth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cloth.cpp; path = ../cloth.cpp; sourceTree = "<group>"; };
+		448BA3661A00EABF00B3C04C /* postprocessdof.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = postprocessdof.cpp; path = ../postprocessdof.cpp; sourceTree = "<group>"; };
+		448BA3671A00EABF00B3C04C /* postprocessdof.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = postprocessdof.h; path = ../postprocessdof.h; sourceTree = "<group>"; };
+		448BA36A1A00EACA00B3C04C /* cloth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cloth.h; path = ../cloth.h; sourceTree = "<group>"; };
+		448BA36B1A00EACA00B3C04C /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = engine.h; path = ../engine.h; sourceTree = "<group>"; };
+		448BA36C1A00EACA00B3C04C /* gridnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gridnode.cpp; path = ../gridnode.cpp; sourceTree = "<group>"; };
+		448BA36D1A00EACA00B3C04C /* gridnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gridnode.h; path = ../gridnode.h; sourceTree = "<group>"; };
+		448BA36E1A00EACA00B3C04C /* lightnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lightnode.cpp; path = ../lightnode.cpp; sourceTree = "<group>"; };
+		448BA36F1A00EACA00B3C04C /* lightnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lightnode.h; path = ../lightnode.h; sourceTree = "<group>"; };
+		448BA3701A00EACA00B3C04C /* material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = material.cpp; path = ../material.cpp; sourceTree = "<group>"; };
+		448BA3711A00EACA00B3C04C /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = material.h; path = ../material.h; sourceTree = "<group>"; };
+		448BA3721A00EACA00B3C04C /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mesh.h; path = ../mesh.h; sourceTree = "<group>"; };
+		448BA3731A00EACA00B3C04C /* meshnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = meshnode.cpp; path = ../meshnode.cpp; sourceTree = "<group>"; };
+		448BA3741A00EACA00B3C04C /* meshnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = meshnode.h; path = ../meshnode.h; sourceTree = "<group>"; };
+		448BA3751A00EACA00B3C04C /* meshresource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = meshresource.cpp; path = ../meshresource.cpp; sourceTree = "<group>"; };
+		448BA3761A00EACA00B3C04C /* meshresource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = meshresource.h; path = ../meshresource.h; sourceTree = "<group>"; };
+		448BA3771A00EACA00B3C04C /* postprocess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = postprocess.cpp; path = ../postprocess.cpp; sourceTree = "<group>"; };
+		44DD55761A0A2E4D00EA3942 /* oglrenderer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = oglrenderer.xcodeproj; path = /Users/username/Downloads/nie3d/build/ios/../../src/oglrenderer/proj.ios/oglrenderer.xcodeproj; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		448BA3361A00E9E800B3C04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		448BA32E1A00E9DC00B3C04C = {
+			isa = PBXGroup;
+			children = (
+				448BA36A1A00EACA00B3C04C /* cloth.h */,
+				448BA36B1A00EACA00B3C04C /* engine.h */,
+				448BA36C1A00EACA00B3C04C /* gridnode.cpp */,
+				448BA36D1A00EACA00B3C04C /* gridnode.h */,
+				448BA36E1A00EACA00B3C04C /* lightnode.cpp */,
+				448BA36F1A00EACA00B3C04C /* lightnode.h */,
+				448BA3701A00EACA00B3C04C /* material.cpp */,
+				448BA3711A00EACA00B3C04C /* material.h */,
+				448BA3721A00EACA00B3C04C /* mesh.h */,
+				448BA3731A00EACA00B3C04C /* meshnode.cpp */,
+				448BA3741A00EACA00B3C04C /* meshnode.h */,
+				448BA3751A00EACA00B3C04C /* meshresource.cpp */,
+				448BA3761A00EACA00B3C04C /* meshresource.h */,
+				448BA3771A00EACA00B3C04C /* postprocess.cpp */,
+				448BA3661A00EABF00B3C04C /* postprocessdof.cpp */,
+				448BA3671A00EABF00B3C04C /* postprocessdof.h */,
+				448BA3401A00EAB200B3C04C /* rendercontext.cpp */,
+				448BA3411A00EAB200B3C04C /* rendercontext.h */,
+				448BA3421A00EAB200B3C04C /* rendernode.cpp */,
+				448BA3431A00EAB200B3C04C /* rendernode.h */,
+				448BA3441A00EAB200B3C04C /* resource.cpp */,
+				448BA3451A00EAB200B3C04C /* resource.h */,
+				448BA3461A00EAB200B3C04C /* resourcecache.cpp */,
+				448BA3471A00EAB200B3C04C /* resourcecache.h */,
+				448BA3481A00EAB200B3C04C /* scene.cpp */,
+				448BA3491A00EAB200B3C04C /* scene.h */,
+				448BA34A1A00EAB200B3C04C /* scenenode.cpp */,
+				448BA34B1A00EAB200B3C04C /* scenenode.h */,
+				448BA34C1A00EAB200B3C04C /* texture.cpp */,
+				448BA34D1A00EAB200B3C04C /* texture.h */,
+				448BA34E1A00EAB200B3C04C /* utilityrenderer.cpp */,
+				448BA34F1A00EAB200B3C04C /* utilityrenderer.h */,
+				448BA3501A00EAB200B3C04C /* cameranode.cpp */,
+				448BA3511A00EAB200B3C04C /* cameranode.h */,
+				448BA3521A00EAB200B3C04C /* cloth.cpp */,
+				448BA33E1A00EA9E00B3C04C /* postprocess.h */,
+				44DD557D1A0A2E6D00EA3942 /* Projects */,
+				448BA33A1A00E9E900B3C04C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		448BA33A1A00E9E900B3C04C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				448BA3391A00E9E900B3C04C /* libengine_d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44DD55771A0A2E4D00EA3942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44DD557B1A0A2E4D00EA3942 /* liboglrenderer_d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44DD557D1A0A2E6D00EA3942 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				44DD55761A0A2E4D00EA3942 /* oglrenderer.xcodeproj */,
+			);
+			name = Projects;
+			path = ../../oglrenderer/proj.ios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		448BA3371A00E9E800B3C04C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448BA3791A00EACA00B3C04C /* engine.h in Headers */,
+				448BA3601A00EAB200B3C04C /* texture.h in Headers */,
+				448BA35E1A00EAB200B3C04C /* scenenode.h in Headers */,
+				448BA37D1A00EACA00B3C04C /* lightnode.h in Headers */,
+				448BA3581A00EAB200B3C04C /* resource.h in Headers */,
+				448BA3781A00EACA00B3C04C /* cloth.h in Headers */,
+				448BA3641A00EAB200B3C04C /* cameranode.h in Headers */,
+				448BA3801A00EACA00B3C04C /* mesh.h in Headers */,
+				448BA3691A00EABF00B3C04C /* postprocessdof.h in Headers */,
+				448BA3541A00EAB200B3C04C /* rendercontext.h in Headers */,
+				448BA3841A00EACA00B3C04C /* meshresource.h in Headers */,
+				448BA3561A00EAB200B3C04C /* rendernode.h in Headers */,
+				448BA35C1A00EAB200B3C04C /* scene.h in Headers */,
+				448BA37B1A00EACA00B3C04C /* gridnode.h in Headers */,
+				448BA35A1A00EAB200B3C04C /* resourcecache.h in Headers */,
+				448BA33F1A00EA9E00B3C04C /* postprocess.h in Headers */,
+				448BA3621A00EAB200B3C04C /* utilityrenderer.h in Headers */,
+				448BA37F1A00EACA00B3C04C /* material.h in Headers */,
+				448BA3821A00EACA00B3C04C /* meshnode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		448BA3381A00E9E800B3C04C /* engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 448BA33B1A00E9E900B3C04C /* Build configuration list for PBXNativeTarget "engine" */;
+			buildPhases = (
+				448BA3351A00E9E800B3C04C /* Sources */,
+				448BA3361A00E9E800B3C04C /* Frameworks */,
+				448BA3371A00E9E800B3C04C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44DD557F1A0A2EA200EA3942 /* PBXTargetDependency */,
+			);
+			name = engine;
+			productName = engine;
+			productReference = 448BA3391A00E9E900B3C04C /* libengine_d.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		448BA32F1A00E9DC00B3C04C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 448BA3321A00E9DC00B3C04C /* Build configuration list for PBXProject "engine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 448BA32E1A00E9DC00B3C04C;
+			productRefGroup = 448BA33A1A00E9E900B3C04C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44DD55771A0A2E4D00EA3942 /* Products */;
+					ProjectRef = 44DD55761A0A2E4D00EA3942 /* oglrenderer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				448BA3381A00E9E800B3C04C /* engine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		44DD557B1A0A2E4D00EA3942 /* liboglrenderer_d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liboglrenderer_d.a;
+			remoteRef = 44DD557A1A0A2E4D00EA3942 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		448BA3351A00E9E800B3C04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448BA3681A00EABF00B3C04C /* postprocessdof.cpp in Sources */,
+				448BA37A1A00EACA00B3C04C /* gridnode.cpp in Sources */,
+				448BA37E1A00EACA00B3C04C /* material.cpp in Sources */,
+				448BA3651A00EAB200B3C04C /* cloth.cpp in Sources */,
+				448BA3851A00EACA00B3C04C /* postprocess.cpp in Sources */,
+				448BA3631A00EAB200B3C04C /* cameranode.cpp in Sources */,
+				448BA35D1A00EAB200B3C04C /* scenenode.cpp in Sources */,
+				448BA3831A00EACA00B3C04C /* meshresource.cpp in Sources */,
+				448BA37C1A00EACA00B3C04C /* lightnode.cpp in Sources */,
+				448BA35B1A00EAB200B3C04C /* scene.cpp in Sources */,
+				448BA3531A00EAB200B3C04C /* rendercontext.cpp in Sources */,
+				448BA3551A00EAB200B3C04C /* rendernode.cpp in Sources */,
+				448BA35F1A00EAB200B3C04C /* texture.cpp in Sources */,
+				448BA3591A00EAB200B3C04C /* resourcecache.cpp in Sources */,
+				448BA3811A00EACA00B3C04C /* meshnode.cpp in Sources */,
+				448BA3571A00EAB200B3C04C /* resource.cpp in Sources */,
+				448BA3611A00EAB200B3C04C /* utilityrenderer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44DD557F1A0A2EA200EA3942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = oglrenderer;
+			targetProxy = 44DD557E1A0A2EA200EA3942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		448BA3331A00E9DC00B3C04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CONFIGURATION_BUILD_DIR = ../../../bin/ios;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lcore_d",
+					"-loglrenderer_d",
+				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		448BA3341A00E9DC00B3C04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CONFIGURATION_BUILD_DIR = ../../../bin/ios;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lcore",
+					"-loglrenderer",
+				);
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		448BA33C1A00E9E900B3C04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../../../bin/ios;
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					../../,
+					../../../thirdparty,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = engine_d;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+			};
+			name = Debug;
+		};
+		448BA33D1A00E9E900B3C04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = ../../../bin/ios;
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					../../,
+					../../../thirdparty,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				OBJROOT = ../../../bin/ios;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = engine;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SYMROOT = ../../../bin/ios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		448BA3321A00E9DC00B3C04C /* Build configuration list for PBXProject "engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				448BA3331A00E9DC00B3C04C /* Debug */,
+				448BA3341A00E9DC00B3C04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		448BA33B1A00E9E900B3C04C /* Build configuration list for PBXNativeTarget "engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				448BA33C1A00E9E900B3C04C /* Debug */,
+				448BA33D1A00E9E900B3C04C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 448BA32F1A00E9DC00B3C04C /* Project object */;
+}
