@@ -6,11 +6,7 @@
 #include <algorithm>
 #include <iostream>
 
-#ifdef _DEBUG
-#pragma comment(lib, "../../../thirdparty/fbx/lib/vs2008/x86/debug/libfbxsdk.lib")
-#else
 #pragma comment(lib, "../../../thirdparty/fbx/lib/vs2008/x86/release/libfbxsdk.lib")
-#endif
 
 #ifdef IOS_REF
 #undef  IOS_REF

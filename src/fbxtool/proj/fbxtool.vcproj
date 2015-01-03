@@ -68,7 +68,7 @@
 				AdditionalLibraryDirectories="../../../bin/VS2008"
 				GenerateDebugInformation="true"
 				SubSystem="1"
-				TargetMachine="1"
+				TargetMachine="0"
 			/>
 			<Tool
 				Name="VCALinkTool"
