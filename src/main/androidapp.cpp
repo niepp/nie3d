@@ -133,31 +133,6 @@ bool Application::InitRenderer()
 
 }
 
-void Application::Resume()
-{
-	int width = 0, height = 0;
-	width = ANativeWindow_getWidth(m_android_app->window);
-	height = ANativeWindow_getHeight(m_android_app->window);
-
-	LogUtils::Instance()->LogInfo("android_app window = %p", m_android_app->window);
-
-	RendererDesc desc;
-	memset(&desc, 0, sizeof(desc));
-	desc.adapter = 0;
-	desc.interval = false;
-	desc.bfullscreen = false;
-	desc.width = width;
-	desc.height = height;
-	desc.colorbits = 32;
-	desc.alphabits = 8;
-	desc.depthbits = 24;
-	desc.stencilbits = 0;
-	desc.context_obj = (void*)m_android_app->window;
-
-	ResumeRenderer(g_renderer, desc);
-
-}
-
 void Application::Release()
 {
 	Cleanup();

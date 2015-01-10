@@ -172,11 +172,6 @@ Bool OGLDevice::Init(ANativeWindow *native_window)
 
 }
 
-void OGLDevice::Resume(ANativeWindow *native_window)
-{
-	m_surface = eglCreateWindowSurface(m_display, m_config, native_window, NULL);
-}
-
 void OGLDevice::Destroy()
 {
 	if (m_display != EGL_NO_DISPLAY) {

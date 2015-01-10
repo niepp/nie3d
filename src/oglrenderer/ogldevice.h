@@ -19,7 +19,6 @@ public:
     OGLDevice() : m_surface(0), m_context(0), m_display(0) { }
 	Bool Init(ANativeWindow *native_window);
 	void Destroy();
-	void Resume(ANativeWindow *native_window);
 public:
 	EGLSurface m_surface;
 	EGLContext m_context;

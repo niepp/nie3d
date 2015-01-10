@@ -97,17 +97,6 @@ Bool OGLRenderer::InitDevice(const RendererDesc &desc)
 
 }
 
-#if PLATFORM == PLATFORM_ANDROID
-void OGLRenderer::Resume(const RendererDesc &desc)
-{
-	m_device.Resume(desc);
-	OGLWinRenderTarget *mainTarget = (OGLWinRenderTarget*)GetMainTarget();
-	if (mainTarget != NULL) {
-		mainTarget->InitDeviceObject(m_device);
-	}
-}
-#endif
-
 IMaterialTemplate *OGLRenderer::CreateMaterialTemplate(const char *path)
 {
 	assert(path);
@@ -395,12 +384,4 @@ OGLRENDERER_API IRenderer* CreateRenderer(const RendererDesc &desc)
 		delete(prenderer);
 		return NULL;
 	}
-}
-
-OGLRENDERER_API void ResumeRenderer(const IRenderer* renderer, const RendererDesc &desc)
-{
-#if PLATFORM == PLATFORM_ANDROID
-	OGLRenderer *prenderer = *OGLRenderer*)renderer;
-	prenderer->Resume(desc);
-#endif
 }
