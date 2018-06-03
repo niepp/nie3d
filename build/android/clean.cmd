@@ -1,5 +1,5 @@
 :: set path to yours
-set PROJ=e:/work/myproj/nie3d/build/android
+set PROJ=e:/work/nie3d/build/android
 
 cd /d %PROJ%
 
