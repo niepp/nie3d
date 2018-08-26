@@ -8,9 +8,9 @@ public:
 	Bool Create(const RendererDesc &desc);
 	void Destroy();
 	Bool InitDevice(const RendererDesc &desc);
-#if PLATFORM == PLATFORM_ANDROID
-	void Resume(const RendererDesc &desc);
-#endif
+//#if PLATFORM == PLATFORM_ANDROID
+//	void Resume(const RendererDesc &desc);
+//#endif
 
 public:
 	virtual ITexture*		CreateTexture(const TextureDesc &texdesc, const TextureData *ptexdata=NULL );
@@ -51,6 +51,5 @@ private:
 
 extern "C" {
 	OGLRENDERER_API IRenderer* CreateRenderer(const RendererDesc &desc);
-	OGLRENDERER_API void ResumeRenderer(const IRenderer* renderer, const RendererDesc &desc);
 };
 

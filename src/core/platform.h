@@ -5,10 +5,10 @@
 // define supported target platform macro
 #define PLATFORM_UNKNOWN			0
 #define PLATFORM_IOS				1
-#define PLATFORM_MAC				5
 #define PLATFORM_ANDROID			2
 #define PLATFORM_WIN32				3
 #define PLATFORM_LINUX				4
+#define PLATFORM_MAC				5
 
 // define compiler macro
 #define COMPILER_NONE				0

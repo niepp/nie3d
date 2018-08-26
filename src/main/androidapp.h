@@ -28,7 +28,6 @@ private:
 public:
 	void InitAndroid(android_app *app) { m_android_app = app; }
 	Bool InitRenderer();
-	void Resume();
 
 	Scene* GetScene() { return m_scene; }
 	void SetFrameRate(Uint32 frame_rate);

@@ -1,6 +1,5 @@
 :: set path to yours
-set NDK_ROOT=e:/mobile_dev/android/android-ndk/android-ndk-r8d
-
+set NDK_ROOT=e:/android/android-ndk/android-ndk-r8d
 cd /d %~dp0
 
 : BUILD_PROJECT
