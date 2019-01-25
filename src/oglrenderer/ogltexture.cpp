@@ -1,3 +1,4 @@
+#include <algorithm>
 #include "core/core.h"
 
 #include "ogl.h"

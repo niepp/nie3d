@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6CEB91B4-A072-4D5E-A3FB-FB6E8C4679B3}</ProjectGuid>
+    <RootNamespace>core</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/vs2008/debug/</OutDir>
+    <IntDir>../../../intermediate/VS2008/Debug/core\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/vs2015/release/</OutDir>
+    <IntDir>../../../intermediate/VS2015/release/core\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>../../../intermediate/VS2008/Debug/core/BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../;../../../thirdparty;../../../thirdparty/zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;CORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)core_d.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <BuildLog>
+      <Path>../../../intermediate/VS2015/Release/core/BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../../;../../../thirdparty;../../../thirdparty/zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;CORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <ProgramDataBaseFileName>$(OutDir)core.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\math\color.cpp" />
+    <ClCompile Include="..\renderer\renderstate.cpp" />
+    <ClCompile Include="..\renderer\shadermacro.cpp" />
+    <ClCompile Include="..\unzip\ioapi.cpp" />
+    <ClCompile Include="..\unzip\unzip.cpp" />
+    <ClCompile Include="..\config.cpp" />
+    <ClCompile Include="..\fileutils.cpp" />
+    <ClCompile Include="..\log.cpp" />
+    <ClCompile Include="..\timer.cpp" />
+    <ClCompile Include="..\variant.cpp" />
+    <ClCompile Include="..\xmlutils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\math\color.h" />
+    <ClInclude Include="..\math\mathdef.h" />
+    <ClInclude Include="..\math\matrix.h" />
+    <ClInclude Include="..\math\quaternion.h" />
+    <ClInclude Include="..\math\rect.h" />
+    <ClInclude Include="..\math\sphere.h" />
+    <ClInclude Include="..\math\vector2.h" />
+    <ClInclude Include="..\math\vector3.h" />
+    <ClInclude Include="..\math\vector4.h" />
+    <ClInclude Include="..\renderer\irenderdef.h" />
+    <ClInclude Include="..\renderer\irenderer.h" />
+    <ClInclude Include="..\renderer\renderstate.h" />
+    <ClInclude Include="..\renderer\shadermacro.h" />
+    <ClInclude Include="..\unzip\ioapi.h" />
+    <ClInclude Include="..\unzip\unzip.h" />
+    <ClInclude Include="..\config.h" />
+    <ClInclude Include="..\core.h" />
+    <ClInclude Include="..\criticalsection.h" />
+    <ClInclude Include="..\filepath.h" />
+    <ClInclude Include="..\fileutils.h" />
+    <ClInclude Include="..\log.h" />
+    <ClInclude Include="..\mempool.h" />
+    <ClInclude Include="..\platform.h" />
+    <ClInclude Include="..\refobject.h" />
+    <ClInclude Include="..\stringdef.h" />
+    <ClInclude Include="..\stringutils.h" />
+    <ClInclude Include="..\timer.h" />
+    <ClInclude Include="..\types.h" />
+    <ClInclude Include="..\variant.h" />
+    <ClInclude Include="..\xmlutils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\mempool_impl.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

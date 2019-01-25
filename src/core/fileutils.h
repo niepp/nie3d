@@ -1,6 +1,7 @@
 #pragma once
 
 #include "unzip/unzip.h"
+#include <iostream>
 
 class CORE_API FileUtils
 {
@@ -39,7 +40,9 @@ Int8* FileUtils::ReadTextFile(const char *pszFileName, Uint32 *pSize)
 	do {
 		// read the file from hardware
 		FILE *fp = fopen(path.AsCharPtr(), "r");
-		if(!fp) { break; }
+		if (!fp) {
+			break;
+		}
 
 		fseek(fp,0,SEEK_END);
 		*pSize = ftell(fp);

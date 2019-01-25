@@ -39,6 +39,7 @@ Bool Material::Load()
 		XmlNode *macro_node = XmlUtils::FirstChildNode(root, "shadermacro");
 		int count = 0;
 		XmlUtils::GetAttribute<int>(macro_node, "count", count);
+
 		for (int i = 0; i < count; ++i)
 		{
 			String node_name;

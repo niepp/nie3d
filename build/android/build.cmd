@@ -1,6 +1,6 @@
 :: set path to yours
-set NDK_ROOT=e:/android/android-ndk/android-ndk-r8d
-set PROJ=e:/work/nie3d/build/android
+set NDK_ROOT=D:/Android/android-ndk-r8d
+set PROJ=F:/nie3d/build/android
 
 set CleanBinBeforeBuild=1
 set Debug=0

@@ -136,7 +136,7 @@ bool Application::Init(HINSTANCE instance, const char *title, int width, int hei
 	::ShowWindow(m_hwnd, SW_SHOWDEFAULT);
 	::UpdateWindow(m_hwnd);
 
-	FileUtils::Instance()->SetResourceRoot("../../res/");
+	FileUtils::Instance()->SetResourceRoot("../../../res/");
 
 	RendererDesc desc;
 	memset(&desc, 0, sizeof(desc));

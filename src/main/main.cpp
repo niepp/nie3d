@@ -24,6 +24,7 @@
 #include "engine/meshnode.h"
 
 #if PLATFORM == PLATFORM_WIN32
+#include <iostream>
 #include "cameractrl.h"
 #include "winapp.h"
 #elif PLATFORM == PLATFORM_ANDROID
@@ -146,14 +147,14 @@ int main(void)
 		GetModuleFileName(NULL, &buffer[0], sizeof(buffer));
 		std::string rawfilename(buffer);
 		size_t pos = rawfilename.rfind('\\');
-		std::string path = rawfilename.substr(0, pos);
-		SetCurrentDirectory(path.c_str());
+		std::string path = rawfilename.substr(0, pos + 1);
+		SetCurrentDirectory(path.c_str());		
 	}
 
 	Application &app = Application::GetInstance();
 	app.RegisterUpdate(Update);
 
-	if(!app.Init(GetModuleHandle(NULL), "base demo!", 800, 600))
+	if (!app.Init(GetModuleHandle(NULL), "base demo!", 800, 600))
 	{
 		::MessageBox(NULL, "≥ı ºªØ ß∞‹£°", "¥ÌŒÛ", MB_OK);
 		return -1;
