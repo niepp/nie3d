@@ -119,7 +119,7 @@ Bool OGLDevice::Init(HDC hDC)
 
 
 #elif PLATFORM == PLATFORM_ANDROID
-
+#include <android/native_window_jni.h>
 Bool OGLDevice::Init(ANativeWindow *native_window)
 {
 	/*
