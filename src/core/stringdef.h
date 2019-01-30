@@ -1,10 +1,10 @@
 ﻿#pragma once
-#include <assert.h>
-#include <stdarg.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
+#include <cassert>
+#include <cstdarg>
+#include <cstdio>
+#include <string>
+#include <cstdlib>
+#include <cctype>
 
 #pragma warning(disable : 4996)
 

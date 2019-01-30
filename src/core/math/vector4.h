@@ -2,8 +2,8 @@
 #ifndef __VECTOR4_H__
 #define __VECTOR4_H__
 
-#include <math.h>
-#include <assert.h>
+#include <cmath>
+#include <cassert>
 
 struct Vector4
 {

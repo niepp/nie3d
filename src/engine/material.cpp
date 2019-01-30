@@ -230,6 +230,12 @@ void Material::SetParamsToShader(IShader* pShader)
 				}
 			}
 			break;
+		case cVarBool:
+			{
+				bool data = var.GetBool();
+				pShader->SetConstant(params.pname, &data);
+			}
+			break;
 		case cVarFloat:
 			{
 				float data = var.GetFloat();

@@ -3,7 +3,7 @@
 #ifndef __MATH_DEF_H__
 #define __MATH_DEF_H__
 
-#include <math.h>
+#include <cmath>
 
 const Float cEpsilon = 1e-4f;
 const Float cPi = 3.141592653589793f;
@@ -71,6 +71,48 @@ template<typename T>
 inline T Min(T a, T b)
 {
 	return (a < b) ? a : b;
+}
+
+template<typename T>
+inline T Sqrt(T a)
+{
+	return (T)1.0 / InvSqrtFast(a);
+}
+
+template<typename T>
+inline T Sin(T a)
+{
+	return std::sin(a);
+}
+
+template<typename T>
+inline T Cos(T a)
+{
+	return std::cos(a);
+}
+
+template<typename T>
+inline T Asin(T a)
+{
+	return std::asin(a);
+}
+
+template<typename T>
+inline T Acos(T a)
+{
+	return std::acos(a);
+}
+
+template<typename T>
+inline T Tan(T a)
+{
+	return std::tan(a);
+}
+
+template<typename T>
+inline T Atan2(T a, T b)
+{
+	return std::atan2(a, b);
 }
 
 #endif // __MATH_DEF_H__

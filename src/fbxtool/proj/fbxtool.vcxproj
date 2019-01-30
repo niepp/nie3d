@@ -42,8 +42,8 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>../../../bin/vs2008/debug/</OutDir>
-    <IntDir>../../../intermediate/VS2008/Debug/fbxtool\</IntDir>
+    <OutDir>../../../bin/vs2015/debug/</OutDir>
+    <IntDir>../../../intermediate/vs2015/Debug/fbxtool\</IntDir>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
@@ -54,7 +54,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <BuildLog>
-      <Path>../../../intermediate/VS2008/Debug/fbxtool/BuildLog.htm</Path>
+      <Path>../../../intermediate/vs2015/Debug/fbxtool/BuildLog.htm</Path>
     </BuildLog>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -70,7 +70,7 @@
     <Link>
       <AdditionalDependencies>core.lib;oglrenderer.lib;engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>../../../bin/VS2008/debug/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../../bin/vs2015/debug/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>NotSet</TargetMachine>

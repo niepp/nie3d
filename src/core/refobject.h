@@ -6,7 +6,7 @@
 #if PLATFORM == PLATFORM_WIN32
 	#include <windows.h>
 #elif PLATFORM == PLATFORM_ANDROID
-	#include <sys/atomics.h>
+	#include <stdatomic.h>
 #elif PLATFORM == PLATFORM_IOS
 	#include <libkern/OSAtomic.h>
 #endif
@@ -27,7 +27,7 @@ public:
 #if PLATFORM == PLATFORM_WIN32
 		InterlockedIncrement((LONG*)&m_ref_count);
 #elif PLATFORM == PLATFORM_ANDROID
-		__atomic_inc(static_cast<int32_t*>(&m_ref_count));
+		//atomic_fetch_add(&m_ref_count, 1);
 #elif PLATFORM == PLATFORM_IOS
 		OSAtomicIncrement32(static_cast<Int32*>(&m_ref_count));
 #endif
@@ -38,7 +38,7 @@ public:
 #if PLATFORM == PLATFORM_WIN32
 		InterlockedDecrement((LONG*)&m_ref_count);
 #elif PLATFORM == PLATFORM_ANDROID
-		__atomic_dec(static_cast<int32_t*>(&m_ref_count));
+		//atomic_fetch_sub(&m_ref_count, 1);
 #elif PLATFORM == PLATFORM_IOS
 		OSAtomicDecrement32(static_cast<Int32*>(&m_ref_count));
 #endif
@@ -52,7 +52,9 @@ public:
 protected:
 #if PLATFORM == PLATFORM_WIN32
 	volatile mutable Int32 m_ref_count;
-#elif PLATFORM == PLATFORM_ANDROID || PLATFORM == PLATFORM_IOS
+#elif PLATFORM == PLATFORM_ANDROID 
+	atomic_int m_ref_count;
+#elif PLATFORM == PLATFORM_IOS
 	mutable Int32 m_ref_count;
 #endif
 };

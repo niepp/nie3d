@@ -28,12 +28,12 @@ struct Quaternion
 	{
 		// 约束：axis必须被归一化
 		Float half_angle = 0.5f * angle;
-		Float sin_value = sin(half_angle);
+		Float sin_value = Sin(half_angle);
 		
 		x = axis.x * sin_value;
 		y = axis.y * sin_value;
 		z = axis.z * sin_value;
-		w = cos(half_angle);
+		w = Cos(half_angle);
 	}
 
 	Quaternion(const Vector3 &euler)
@@ -67,9 +67,9 @@ struct Quaternion
 	void GetAxisAngle(Vector3 &axis, Float &angle)
 	{
 		// 约束：四元数必须被归一化
-		Float half_angle = acos(w);
+		Float half_angle = Acos(w);
 		angle = half_angle * 2;
-		Float sin_value = sin(half_angle);
+		Float sin_value = Sin(half_angle);
 		axis.Set(x / sin_value, y / sin_value, z / sin_value);
 	}
 
@@ -77,14 +77,14 @@ struct Quaternion
 	{
 		Float  sinRoll, sinPitch, sinYaw, cosRoll, cosPitch, cosYaw;
 
-		sinYaw = sin(yaw * 0.5f);
-		cosYaw = cos(yaw * 0.5f);
+		sinYaw = Sin(yaw * 0.5f);
+		cosYaw = Cos(yaw * 0.5f);
 
-		sinPitch = sin(pitch * 0.5f);
-		cosPitch = cos(pitch * 0.5f);
+		sinPitch = Sin(pitch * 0.5f);
+		cosPitch = Cos(pitch * 0.5f);
 
-		sinRoll = sin(roll * 0.5f);
-		cosRoll = cos(roll * 0.5f);
+		sinRoll = Sin(roll * 0.5f);
+		cosRoll = Cos(roll * 0.5f);
 
 		x = cosRoll * sinPitch * cosYaw + sinRoll *cosPitch * sinYaw;
 		y = cosRoll * cosPitch * sinYaw - sinRoll *sinPitch * cosYaw;
@@ -245,7 +245,7 @@ struct Quaternion
 	
 	Float Length() const
 	{
-		return sqrt(SqrLength());
+		return Sqrt(SqrLength());
 	}
 
 	Bool IsIdentity() const
@@ -311,13 +311,13 @@ struct Quaternion
 		// As q = cos(A) + sin(A) * ( a*i + b*j + c*k ), then
 		// q^t = cos(t*A) + sin(t*A) * ( a*i + b*j + c*k )
 
-		Float angle = acos(w);
-		Float sin_value = sin(angle);
+		Float angle = Acos(w);
+		Float sin_value = Sin(angle);
 		angle *= t;
 		Quaternion result;
-		result.w = cos(angle);
+		result.w = Cos(angle);
 		
-		Float coeff = sin(angle) / sin_value;
+		Float coeff = Sin(angle) / sin_value;
 		result.x = coeff * x;
 		result.y = coeff * y;
 		result.z = coeff * z;
@@ -329,11 +329,11 @@ struct Quaternion
 		// As q = A * ( a*i + b*j + c*k ), then
 		// exp(q) = cos(A) + sin(A) * ( a*i + b*j + c*k ).
 
-		Float angle = sqrt(x * x + y * y + z * z);
-		Float sin_value = sin(angle);
+		Float angle = Sqrt(x * x + y * y + z * z);
+		Float sin_value = Sin(angle);
 
 		Quaternion result;
-		result.w = cos(angle);
+		result.w = Cos(angle);
 
 		if ( Abs(sin_value) >= cEpsilon )
 		{
@@ -361,8 +361,8 @@ struct Quaternion
 
 		if (Abs(w) < 1.0f)
 		{
-			Float angle = acos(w);
-			Float sin_value = sin(angle);
+			Float angle = Acos(w);
+			Float sin_value = Sin(angle);
 			if (Abs(sin_value) >= cEpsilon)
 			{
 				Float coeff = (Float)(angle / sin_value);
@@ -432,10 +432,10 @@ inline void Quaternion::Intrp(const Quaternion &q1, const Quaternion &q2, const 
 	else
 	{ 
 		// 四元数插值
-		omega = acos(cos_om);
-		sin_om_reci = 1.0f / sin(omega);
-		k1 = sin(1.0f - t) * omega * sin_om_reci;
-		k2 = sin(t * omega) * sin_om_reci;
+		omega = Acos(cos_om);
+		sin_om_reci = 1.0f / Sin(omega);
+		k1 = Sin(1.0f - t) * omega * sin_om_reci;
+		k2 = Sin(t * omega) * sin_om_reci;
 		*this = k1 * q1 + k2 * rot_q2;
 	}
 

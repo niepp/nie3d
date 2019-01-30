@@ -51,6 +51,6 @@ void LogUtils::LogInfo(const char *fmt, ...)
 	g_log_file.Write(s);
 	printf(s);
 #elif PLATFORM == PLATFORM_ANDROID
-	__android_log_print(ANDROID_LOG_DEBUG, "Info", s);
+	__android_log_print(ANDROID_LOG_DEBUG, "JNI_DEBUGGING", "info:%s", s);
 #endif
 }

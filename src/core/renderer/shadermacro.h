@@ -29,9 +29,9 @@ struct CORE_API ShaderMacro
 		m_macro_value = 0;
 	}
 
-	inline void GetMacro(const String &name, Uint32 &macrovalue) const;
+	void GetMacro(const String &name, Uint32 &macrovalue) const;
 
-	inline void SetMacro(const String &name, Uint32 macrovalue);
+	void SetMacro(const String &name, Uint32 macrovalue);
 
 	void GetDefineStr(char *buf[], Uint32 &define_count) const;
 

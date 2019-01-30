@@ -43,8 +43,8 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>../../../bin/vs2008/debug/</OutDir>
-    <IntDir>../../../intermediate/VS2008/Debug/core\</IntDir>
+    <OutDir>../../../bin/vs2015/debug/</OutDir>
+    <IntDir>../../../intermediate/vs2015/Debug/core\</IntDir>
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -53,7 +53,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <BuildLog>
-      <Path>../../../intermediate/VS2008/Debug/core/BuildLog.htm</Path>
+      <Path>../../../intermediate/vs2015/Debug/core/BuildLog.htm</Path>
     </BuildLog>
     <ClCompile>
       <Optimization>Disabled</Optimization>

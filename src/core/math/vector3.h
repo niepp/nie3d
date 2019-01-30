@@ -2,8 +2,8 @@
 #ifndef __VECTOR3_H__
 #define __VECTOR3_H__
 
-#include <math.h>
-#include <assert.h>
+#include <cmath>
+#include <cassert>
 
 struct Vector3
 {
@@ -282,7 +282,7 @@ inline Vector3 Cross(const Vector3 &vec1, const Vector3 &vec2)
 // 求两个向量夹角的余弦
 inline Float Cos2Vec(const Vector3 &a, const Vector3 &b)
 {
-	return Dot(a, b) / ::sqrt(a.LengthSqr() * b.LengthSqr());
+	return Dot(a, b) * InvSqrtFast(a.LengthSqr() * b.LengthSqr());
 }
 
 // 求两个向量夹角正弦的平方
@@ -295,7 +295,7 @@ inline Float Sin2VecSqr(const Vector3 &a, const Vector3 &b)
 // 求两个向量夹角的正弦
 inline Float Sin2Vec(const Vector3 &a, const Vector3 &b)
 {
-	return ::sqrt(Sin2VecSqr(a, b));
+	return Sqrt(Sin2VecSqr(a, b));
 }
 
 #endif // __VECTOR3_H__

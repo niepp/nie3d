@@ -2,7 +2,7 @@
 #ifndef __MATRIX_H__
 #define __MATRIX_H__
 
-#include <math.h>
+#include <cmath>
 
 // 右手系Z-up, 行主序
 struct Matrix
@@ -147,7 +147,7 @@ inline void MatrixToQuaternion(const Matrix &mat, Quaternion &rot)
 		j = next_index[i];
 		k = next_index[j];
 
-		s = sqrt(mat.m[i][i] - mat.m[j][j] - mat.m[k][k] + 1.0f);
+		s = Sqrt(mat.m[i][i] - mat.m[j][j] - mat.m[k][k] + 1.0f);
 
 		rot.q[i] = s * 0.5f;
 		s = 0.5f / s;
@@ -157,7 +157,7 @@ inline void MatrixToQuaternion(const Matrix &mat, Quaternion &rot)
 	}
 	else
 	{
-		s = sqrt(tr + 1.0f);
+		s = Sqrt(tr + 1.0f);
 
 		rot.w = s * 0.5f;
 		s = 0.5f / s;
@@ -172,12 +172,12 @@ inline void MatrixToQuaternion(const Matrix &mat, Quaternion &rot)
 inline void EulerToMatrix(Float pitch, Float roll, Float yaw, Matrix &mat)
 {
 	// euler : 
-	Float xc = cos(pitch);
-	Float xs = sin(pitch);
-	Float yc = cos(roll);
-	Float ys = sin(roll);
-	Float zc = cos(yaw);
-	Float zs = sin(yaw);
+	Float xc = Cos(pitch);
+	Float xs = Sin(pitch);
+	Float yc = Cos(roll);
+	Float ys = Sin(roll);
+	Float zc = Cos(yaw);
+	Float zs = Sin(yaw);
 
 	mat.m00 = yc * zc;
 	mat.m10 = -xc * zs + zc * xs * ys;
@@ -217,17 +217,17 @@ inline void MatrixToEuler(const Matrix &mat, Float &pitch, Float &roll, Float &y
 	}
 	else
 	{
-		roll = asin(ys);
+		roll = Asin(ys);
 	}
 	if (ys > 1.0f - cEpsilon)
 	{
 		yaw = 0;
-		pitch = atan2(-mat.m21, mat.m11);
+		pitch = Atan2(-mat.m21, mat.m11);
 	}
 	else
 	{
-		yaw = atan2(mat.m01, mat.m00);
-		pitch = atan2(mat.m12, mat.m22);
+		yaw = Atan2(mat.m01, mat.m00);
+		pitch = Atan2(mat.m12, mat.m22);
 	}
 }
 
@@ -628,7 +628,7 @@ inline void Matrix::MakeMatViewR(const Vector3 &eye, const Vector3 &lookat, cons
 
 inline void Matrix::MakeMatPerspR(Float fov_y, Float aspect, Float min_z, Float max_z)
 {
-	m11 = 1.0f / tan(fov_y / 2.0f);
+	m11 = 1.0f / Tan(fov_y / 2.0f);
 	m00 = m11 / aspect;
 	m22 = (min_z + max_z) / (min_z - max_z);
 	m32 = 2 * min_z * max_z / (min_z - max_z);

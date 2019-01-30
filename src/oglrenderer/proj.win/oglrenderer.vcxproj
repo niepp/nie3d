@@ -41,8 +41,8 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>../../../bin/vs2008/debug/</OutDir>
-    <IntDir>../../../intermediate/VS2008/Debug/oglrenderer\</IntDir>
+    <OutDir>../../../bin/vs2015/debug/</OutDir>
+    <IntDir>../../../intermediate/vs2015/Debug/oglrenderer\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -52,7 +52,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <BuildLog>
-      <Path>../../../intermediate/VS2008/Debug/oglrenderer/BuildLog.htm</Path>
+      <Path>../../../intermediate/vs2015/Debug/oglrenderer/BuildLog.htm</Path>
     </BuildLog>
     <ClCompile>
       <AdditionalOptions>/Gm /MDd %(AdditionalOptions)</AdditionalOptions>
@@ -76,7 +76,7 @@
     <Link>
       <AdditionalDependencies>core.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>../../../bin/VS2008/debug/;../../../thirdparty/glew-1.9.0/lib/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../../../bin/vs2015/debug/;../../../thirdparty/glew-1.9.0/lib/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
